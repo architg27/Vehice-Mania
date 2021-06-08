@@ -10,20 +10,20 @@ app.use(express.urlencoded({extended: false}));
 var con = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'architg27'
+  password: 'xxxxx'
 });
-var del=con._protocol._delegateError;
+/*var del=con._protocol._delegateError;
 con._protocol._delegateError=function(err, sequence){
   if(err.fatal){
     console.trace('Fatal error:' + err.message);
   }
   return del.call(this, err,sequence);
-};
+};*/
 var transporter=nodemailer.createTransport({
   service:'gmail',
   auth:{
     user:'vehiclemaina12@gmail.com',
-    pass:'vehicle@27'
+    pass:'xxxxxx'
   }
 })
 
@@ -36,9 +36,6 @@ con.connect(function(err) {
   });
  const sql = "CREATE TABLE IF NOT EXISTS vehicle(name VARCHAR(30),email VARCHAR(40),pass varchar(20), no varchar(12),addr varchar(60),vtype varchar(15),vmanu varchar(30),vmodel varchar(30),vno varchar(20), service1 varchar(20), service2 varchar(30),service3 varchar(25),service4 varchar(25),service5 varchar(30), service6 varchar(25), dat date,time varchar(30),PRIMARY KEY(email))";
   con.query(sql, function (err, result) {
-  //if(err.fatal==false){
-      //console.trace('error:' + err.message);
-    //}
 });
 });
 
@@ -110,7 +107,7 @@ if (email && pass_1) {
 });
 
 app.post('/details', function(req, res)  {
-	var vtype1=req.body.type_8;
+  var vtype1=req.body.type_8;
   var manu=req.body.manufacturer;
   var mo=req.body.model;
   var no=req.body.vehiclenumber;
@@ -125,7 +122,7 @@ app.post('/details', function(req, res)  {
 });
 
 app.post('/slot', function(req, res)  {
-	var ser1=req.body.Periodic_Service;
+  var ser1=req.body.Periodic_Service;
   var ser2=req.body.AC_Service_and_Batteries;
   var ser3=req.body.Tyres_and_Wheel_Care;
   var ser4=req.body.Cleaning_and_Detailing;
