@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+  }
+  header{
+    background-color: rgb(43, 40, 40);
+  }
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    height: 240px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 40px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 23px;
+  }
+  
+  .openbtn {
+    font-size: 19px;
+    background-color: #111;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+  .mania{
+    color:rgb(255, 255, 255);
+    position: relative;
+    left:1130px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: serif;
+  }
+  span{
+    color:rgb(255, 255, 255);
+    left:1130px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  main{
+    background-image: url('/images/pic3.jpg');
+    height: 600px;
+  }
+  .choose{
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 200px;
+  }
+  #periodic{
+    position: absolute;
+    left:250px;
+    top:125px;
+  }
+  .perio {
+    position: absolute;
+    font-size: 25px;
+    left: 280px;
+    top: 112px;
+  }
+  #acbatt{
+    position: absolute;
+    left:700px;
+    top:125px;
+  }
+  .ac {
+    position: absolute;
+    font-size: 25px;
+    left: 730px;
+    top: 112px;
+  }
+  #tyre{
+    position: absolute;
+    left:250px;
+    top:180px;
+  }
+  .tyr {
+    position: absolute;
+    font-size: 25px;
+    left: 280px;
+    top: 167px;
+  }
+  #clean{
+    position: absolute;
+    left:700px;
+    top:180px;
+  }
+  .clde {
+    position: absolute;
+    font-size: 25px;
+    left: 730px;
+    top: 167px;
+  }
+  #glass{
+    position: absolute;
+    left:250px;
+    top:235px;
+  }
+  .glcu {
+    position: absolute;
+    font-size: 25px;
+    left: 280px;
+    top: 222px;
+  }
+  #dent{
+    position: absolute;
+    left:700px;
+    top:235px;
+  }
+  .pade {
+    position: absolute;
+    font-size: 25px;
+    left: 730px;
+    top: 222px;
+  }
+  .cost{
+      position: absolute;
+      left:590px;
+      top:300px;
+      font-size: 20px;
+      text-align: center;
+      padding: 1%;
+      background-color: #fffb00;
+      color: rgb(28, 29, 28);
+      border: none;
+      font-family: sans-serif;
+      padding: 8px;
+      margin: 0 auto;
+      width:10%;
+  }  
+  .da{
+    position: absolute;
+    font-size: 25px;
+    left: 262px;
+  }
+  #date{
+    position: absolute;
+    font-size: 19px;
+    left: 350px;
+  }
+  .ti{
+    position: absolute;
+    font-size: 25px;
+    left: 700px;
+  }
+  #time{
+    position: absolute;
+    font-size: 23px;
+    left: 788px;
+  }
+  .book{
+    position: absolute;
+    left:570px;
+    font-size: 20px;
+    text-align: center;
+    padding: 1%;
+    background-color: #ff9307;
+    color: rgb(28, 29, 28);
+    border: none;
+    font-family: sans-serif;
+    padding: 8px;
+    margin: 0 auto;
+    width:13%;
+  }
+  footer{
+    background-color: rgb(46, 42, 42);
+    color: rgb(255, 255, 255);
+  }
+  
+  .contact{
+    padding-left:117px;
+    line-height: 1.2;
+  }
+  .para1{
+    margin-top: 0;
+    line-height: 0;
+    padding-left: 120px;
+  }

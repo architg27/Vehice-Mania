@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vehicle Mania</title>
+	<link rel="stylesheet" type="text/css" href="\css\slot.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "170px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        function Cost(){
+            var count=0;
+	        if(document.getElementById('periodic').checked) {
+		        count=count+2700;
+	        }
+	        if(document.getElementById('acbatt').checked) {
+		        count=count+600;
+	        }
+            if(document.getElementById('tyre').checked) {
+		        count=count+1300;
+	        }
+            if(document.getElementById('clean').checked) {
+		        count=count+850;
+	        }
+            if(document.getElementById('glass').checked) {
+		        count=count+350;
+	        }
+            if(document.getElementById('dent').checked) {
+		        count=count+1600;
+	        }
+	        alert("Cost = " + count + "\n***Actual cost may vary");
+        }
+        </script>
+    <header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="/">Home</a>
+            <a href="/aboutus">About Us</a>
+            <a href="/ourservices">Our Services</a>
+            <a href="/login">Book an Appointment</a>
+        </div>
+        <button class="openbtn" onclick="openNav()"> ☰ </button>
+        <span class="mania"><b>Vehicle Mania</b></span>
+    </header>
+    <main>
+        <form method="POST" action="slot">
+            <section>
+                <h2 class="choose">Choose Service:</h2>
+                <input type="checkbox" id="periodic" name="Periodic_Service" value="Periodic_Service">
+                <label for="periodic" class="perio">Periodic Service</label>
+                
+                <input type="checkbox" id="acbatt" name="AC_Service_and_Batteries" value="AC_Service_and_Batteries">
+                <label for="acbatt" class="ac">AC Service and Batteries</label><br><br><br><br><br><br>
+            
+                <input type="checkbox" id="tyre" name="Tyres_and_Wheel_Care" value="Tyres_and_Wheel_Care">
+                <label for="tyre" class="tyr">Tyres and Wheel Care</label>            
+           
+                <input type="checkbox" id="clean" name="Cleaning_and_Detailing" value="Cleaning_and_Detailing">
+                <label for="clean" class="clde">Cleaning and Detailing</label><br>
+                
+                <input type="checkbox" id="glass" name="Glass_and_Custom_Service" value="Glass_and_Custom_Service">
+                <label for="glass" class="glcu">Glass and Custom Service</label>
+                
+                <input type="checkbox" id="dent" name="Denting_and_Painting" value="Denting_and_Painting">
+                <label for="dent" class="pade">Denting and Painting</label>
+                <!--<p style="padding-left: 260px; margin-top:40px;">(**The actual cost may vary from the above costs)</p>
+                <button value="Check cost" class="cost" onclick="Cost()">Check Cost</button>-->
+            </section><br><br><br><br><br><br>
+            <section>
+                <h2 class="choose">Book a slot :</h2><br>
+                <label for="date" class="da">Date</label>
+                <input type="date" id="date" name="date">
+                <label for="time" class="ti">Time</label>
+                <select name="timeslot" id="time">
+                    <option value="09:00 am - 11:00 am">09:00 am - 11:00 am</option>
+                    <option value="11:00 am - 01:00 pm">11:00 am - 01:00 pm</option>
+                    <option value="03:00 pm - 05:00 pm">03:00 pm - 05:00 pm</option>
+                    <option value="05:00 pm - 07:00 pm">05:00 pm - 07:00 pm</option>
+                </select><br><br><br><br>
+                <input type="submit" value="Confirm Booking" name="confirmbooking" class="book">
+            </section>
+        </form>
+        <button value="Check cost" class="cost" onclick="Cost()">Check Cost</button>
+    </main>
+    <footer>
+        <h1 class="contact">Contact Us</h1>
+        <br>
+        <div>
+        <p class="para1">Email:-&nbsp;<a href="mailto:vehiclemaina12@gmail.com">vehiclemania12@gmail.com</a></p><br>
+        <p class="para1">Phone:-&nbsp;<a href="tel:9899463165">+919899463165</a></p></div>
+        <br>
+</footer>
+</body>
+</html>

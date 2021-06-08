@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: rgb(43, 40, 40);
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    height: 240px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 40px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 23px;
+  }
+  
+  .openbtn {
+    font-size: 19px;
+    background-color: #111;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+  span{
+    color:rgb(255, 255, 255);
+    position: relative;
+    left:1130px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  /*.adjustment{
+    display: inline-flex;
+  }*/
+  form{
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+  }
+.regis{
+  text-align: center;
+  margin-right: 11%;
+  font-size: 60px;
+  color: rgb(28, 29, 28);
+  font-family: sans-serif;
+  }
+.logi{
+  text-align: center;
+  margin-right: 23.5%;
+  font-size: 60px;
+  color: rgb(28, 29, 28);
+  font-family: sans-serif;
+  }
+.name_9{
+  margin-right: 41%;
+}
+.emailid_9{
+  margin-right: 36%;
+}
+.contactnumber_9{
+  margin-right: 21.5%;
+}
+.password_9{
+  margin-right: 34%;
+}
+.address_9{
+  margin-right: 36.5%;
+}
+label{
+  font-size: 22.5px;
+  margin: 1%;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.inp{
+  font-size: 18px;
+  padding: 8px;
+  width:50%
+}
+.submit_9{
+    margin-right: 25%;
+    font-size: 22.5px;
+    background-color: #fffb00;
+    border:none;
+    color: rgb(28, 29, 28);
+    font-family: sans-serif;
+    padding:8px;
+    margin-top: 4%;
+    width: 25%;
+}
+.para{
+  margin-right: 25%;
+}
+.para2{
+  margin-right: 26%;
+}
+.a1{
+  color: rgb(16, 58, 196);;
+}
+footer{
+  background-color: rgb(46, 42, 42);
+  color: rgb(255, 255, 255);
+}
+.contact{
+  padding-left:117px;
+}
+.para1{
+  margin-top: 0;
+  line-height: 0;
+  padding-left: 120px;
+}

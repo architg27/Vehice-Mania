@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vehicle Mania</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="\css\vehicledetails.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "170px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    <header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="/">Home</a>
+            <a href="/aboutus">About Us</a>
+            <a href="/ourservices">Our Services</a>
+            <a href="/login">Book an Appointment</a>
+        </div>
+        <button class="openbtn" onclick="openNav()"> ☰ </button>
+        <span class="mania"><b>Vehicle Mania</b></span>
+    </header>
+    <section>
+        <div class="w3-container w3-light-grey" style="padding:128px 16px">
+            <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <img src="\images\pic2.jpg" width="700px" height="560px"></div>
+            <div class="w3-col m6">
+                <h1 class="logi"><b>Vehicle Details</b></h1>
+                <form method="POST" action="details">
+                    <label for="type" class="type_9">Vehicle Type</label><br>
+                    <input type="radio" id="twowheeler" name="type_8" value="twowheeler">
+                    <label for="twowheeler" class="twowheeler_9">Two Wheeler</label><br/>
+                    <input type="radio" id="fourwheeler" name="type_8" value="fourwheeler">
+                    <label for="fourwheeler"  class="fourwheeler_9">Four Wheeler</label><br/>
+                    <label for="manufacturer" class="manufacturer_9">Manufacturer</label><br>
+                    <input type="text" id="manufacturer" name="manufacturer"><br><br><br>
+                    <label for="model" class="manufacturer_9">Model</label><br>
+                    <input type="text" id="model" name="model"><br/><br><br>
+                    <label for="vehiclenumber" class="manufacturer_9">Vehicle Number</label><br>
+                    <input type="text" id="vehiclenumber" name="vehiclenumber"><br/>
+                    <input type="submit" value="Proceed" class="submit_9"> 
+                </form>
+    </section>
+    <footer>
+        <h1 class="contact">Contact Us</h1>
+        <br>
+        <div>
+        <p class="para1">Email:-&nbsp;<a href="mailto:vehiclemaina12@gmail.com">vehiclemania12@gmail.com</a></p><br>
+        <p class="para1">Phone:-&nbsp;<a href="tel:9899463165">+919899463165</a></p></div>
+        <br>
+    </footer>
+</body>
+</html>

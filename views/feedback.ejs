@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vehicle Mania</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="\css\feedback.css">
+    <script type="text/javascript">
+    function feedback(){
+    	alert("Thankyou for your feedback \n\n Redirecting to the home screen");
+    }
+    </script>
+</head>
+<body>
+    <section>
+        <h1 style="padding-left: 550px; font-size: 50px; color: black;"><b>Feedback</b></h1>
+        <form method="POST" action="feed">
+            <h2>Specific suggestions (if any) -</h2>
+            <textarea type="text" name="feedback" placeholder="Type here..."></textarea>
+            <input type="submit" value="Submit" class="transform_9_1" onclick="feedback()">
+        </form>
+    </section>
+</body>
+</html>

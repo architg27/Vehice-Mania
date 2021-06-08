@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vehicle Mania</title>
+	<link rel="stylesheet" type="text/css" href="\css\register.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "170px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    <header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="/">Home</a>
+            <a href="/aboutus">About Us</a>
+            <a href="/ourservices">Our Services</a>
+            <a href="/login">Book an Appointment</a>
+        </div>
+        <button class="openbtn" onclick="openNav()"> ☰ </button>
+        <span><b>Vehicle Mania</b></span>
+    </header>
+    <section>
+        <div class="w3-container w3-light-grey" style="padding:128px 16px">
+            <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <img src="\images\pic10.jpg" width="700px" height="560px"></div>
+            <div class="w3-col m6">
+                <h1 class="logi"><b>Login</b></h1>
+                <form method="POST" action="log">
+                    <label for="emailid" class="emailid_9">Email ID</label><br/>
+                    <input type="email" id="emailid" name="emailid" class="inp" required><br/><br/>
+                    <label for="password" class="password_9">Password</label><br/>
+                    <input type="password" id="password" name="password" class="inp" required><br/><br/>
+                    <input type="submit" value="Login" class="submit_9">
+                    <p class="para2">New User?<a href="/register" class="a1">&nbsp;Register</a></p>  
+                </form></div></div></div>
+    </section>
+    <footer>
+            <h1 class="contact">Contact Us</h1>
+            <br>
+            <div>
+            <p class="para1">Email:-&nbsp;<a href="mailto:vehiclemaina12@gmail.com">vehiclemania12@gmail.com</a></p><br>
+            <p class="para1">Phone:-&nbsp;<a href="tel:9899463165">+919899463165</a></p></div>
+            <br>
+    </footer>
+</body>
+</html>
